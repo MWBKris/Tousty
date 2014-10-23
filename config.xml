@@ -2,13 +2,13 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "be.anso.www"
+        id        = "com.tousty.be"
         version   = "1.0.0">
 
-    <name>Anso Resto &amp; Bistro</name>
+    <name>Tousty</name>
 
     <description>
-        Restaurant-Bistro Anso, reeds meer dan 35 jaar een gevestigde culinaire waarde in een aangenaam, rustiek kader te Geraardsbergen. U kan genieten van een excellente keuken, we serveren lunch en U kan er à la carte eten.
+        Tousty is een datingsite enkel gericht op leden met beperkingen vanaf 18 jaar. 
     </description>
 
     <author href="http://my-websitebuilder.com" email="support@my-websitebuilder.com">
