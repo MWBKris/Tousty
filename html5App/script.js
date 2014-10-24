@@ -267,9 +267,11 @@ $(document).load(function() {
 $(document).ready(function() {
 	setLanguage.init();
     $.getJSON('http://www.tousty.com/mobile/nl/api/getButtons', function(json, textStatus) {
+    	if (json.buttons != null) {
         $.each(json.buttons, function(index, val) {
             $('menu').append('<li><a href="'+val.url+'" class="button triggerIframe lblViewSite">'+val.title+'</a></li>')
         });
+    	}
 
         positionCalculator.doFullMenu();
         onlineChecker.init();
