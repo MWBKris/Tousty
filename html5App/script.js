@@ -266,7 +266,7 @@ $(document).load(function() {
 
 $(document).ready(function() {
 	setLanguage.init();
-    $.getJSON('http://www.anso-resto.be/mobile/nl/api/getButtons', function(json, textStatus) {
+    $.getJSON('http://www.tousty.com/mobile/nl/api/getButtons', function(json, textStatus) {
         $.each(json.buttons, function(index, val) {
             $('menu').append('<li><a href="'+val.url+'" class="button triggerIframe lblViewSite">'+val.title+'</a></li>')
         });
