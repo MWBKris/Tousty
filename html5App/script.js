@@ -1,5 +1,5 @@
 var mainData = {
-	url: 'http://www.tousty.com/mobile/',
+	url: 'http://www.anso-resto.be/mobile/',
 	currentLat: '',
 	currentLong: '',
 };
@@ -100,7 +100,7 @@ var onlineChecker = {
 var endlocation = { 'center': '50.7680998,3.8942298,', 'zoom': 14 }; // Google maps
 var start; // Google maps
 var themap; // Google maps
-var destination = "Belgium"; // Google maps
+var destination = "Anso, Markt 2, 9500 Geraardsbergen, Belgium"; // Google maps
 
 var interfaceSwitcher = {
 	init: function() {
@@ -162,7 +162,6 @@ $('#getDirections').click(function() {
 return false;
 });
 $('#showPhotoForm').click(function() {
-	alert("clicked");
     $('.mainWindow').fadeOut();
 
     $('#photoForm').fadeIn();
@@ -267,7 +266,7 @@ $(document).load(function() {
 
 $(document).ready(function() {
 	setLanguage.init();
-    $.getJSON('http://www.tousty.com/mobile/nl/api/getButtons', function(json, textStatus) {
+    $.getJSON('http://www.anso-resto.be/mobile/nl/api/getButtons', function(json, textStatus) {
         $.each(json.buttons, function(index, val) {
             $('menu').append('<li><a href="'+val.url+'" class="button triggerIframe lblViewSite">'+val.title+'</a></li>')
         });
